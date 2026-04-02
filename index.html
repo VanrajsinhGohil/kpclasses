@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K.P. Classes – Commerce Coaching in Manjalpur, Vadodara</title>
+<meta name="description" content="K.P. Classes – Expert commerce coaching in Manjalpur, Vadodara. Skilled faculties, personal attention, proven results. Call 9825108842.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ─── RESET & BASE ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+:root {
+  --white: #ffffff;
+  --bg: #f5f7ff;
+  --bg2: #eef1ff;
+  --blue1: #3a5bd9;
+  --blue2: #2541b2;
+  --purple1: #7c3aed;
+  --purple2: #5b21b6;
+  --grad: linear-gradient(135deg, #3a5bd9 0%, #7c3aed 100%);
+  --grad-soft: linear-gradient(135deg, rgba(58,91,217,0.08) 0%, rgba(124,58,237,0.08) 100%);
+  --grad-hero: linear-gradient(135deg, #0f0c29 0%, #1a1a4e 40%, #24243e 100%);
+  --grey-100: #f0f2ff;
+  --grey-200: #e2e5f5;
+  --grey-400: #9098bb;
+  --grey-600: #5a6182;
+  --text-dark: #0d0f2b;
+  --text-mid: #3a3f6e;
+  --text-light: #8890b5;
+  --shadow-sm: 0 4px 20px rgba(58,91,217,0.10);
+  --shadow-md: 0 8px 36px rgba(58,91,217,0.16);
+  --shadow-lg: 0 20px 60px rgba(58,91,217,0.22);
+  --shadow-glow: 0 0 40px rgba(124,58,237,0.25);
+  --r: 16px;
+  --r-sm: 10px;
+  --r-xl: 28px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+
+/* ─── SCROLLBAR ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--grad); border-radius: 99px; }
+
+/* ─── HEADER ─── */
+header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
+  height: 68px; padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(255,255,255,0.0);
+  backdrop-filter: blur(0px);
+  transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
+}
+header.scrolled {
+  background: rgba(255,255,255,0.94);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 2px 24px rgba(58,91,217,0.10);
+}
+
+.logo-wrap { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-badge {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--grad);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800;
+  color: white; letter-spacing: -0.5px;
+  box-shadow: 0 4px 14px rgba(58,91,217,0.38);
+}
+.logo-text-wrap { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-name { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--text-dark); }
+header.scrolled .logo-name { color: var(--text-dark); }
+.logo-sub { font-size: 0.68rem; color: var(--blue1); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.logo-name-hero { color: white; }
+
+nav { display: flex; align-items: center; gap: 26px; }
+nav a {
+  text-decoration: none; font-size: 0.88rem; font-weight: 500;
+  color: rgba(255,255,255,0.85); transition: color 0.2s;
+}
+header.scrolled nav a { color: var(--text-mid); }
+nav a:hover { color: var(--blue1) !important; }
+.nav-cta {
+  background: var(--grad) !important;
+  color: white !important;
+  padding: 9px 22px; border-radius: 50px;
+  font-weight: 600 !important; font-size: 0.85rem !important;
+  box-shadow: 0 4px 16px rgba(124,58,237,0.35);
+  transition: box-shadow 0.3s, transform 0.2s !important;
+}
+.nav-cta:hover { box-shadow: 0 8px 28px rgba(124,58,237,0.55) !important; transform: translateY(-1px); }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { width: 26px; height: 2px; border-radius: 2px; transition: 0.3s; background: white; }
+header.scrolled .hamburger span { background: var(--text-dark); }
+
+/* ─── HERO ─── */
+#hero {
+  min-height: 100vh;
+  background: var(--grad-hero);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  padding: 100px 5% 80px;
+}
+
+/* Animated mesh background */
+.hero-mesh {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(124,58,237,0.35) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 20% 70%, rgba(58,91,217,0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 60% 80%, rgba(58,91,217,0.15) 0%, transparent 60%);
+}
+
+/* Grid lines overlay */
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none; opacity: 0.06;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Floating 3D shapes */
+.f-shape {
+  position: absolute; pointer-events: none;
+  animation: floatY 7s ease-in-out infinite;
+}
+.f-shape svg { display: block; }
+
+.fs1 { top: 12%; right: 8%; animation-duration: 6s; }
+.fs2 { top: 55%; right: 22%; animation-duration: 8s; animation-delay: 1s; }
+.fs3 { top: 20%; left: 6%; animation-duration: 9s; animation-delay: 2s; }
+.fs4 { bottom: 20%; left: 14%; animation-duration: 7s; animation-delay: 0.5s; }
+.fs5 { top: 38%; right: 5%; animation-duration: 5s; animation-delay: 3s; }
+.fs6 { bottom: 12%; right: 36%; animation-duration: 10s; animation-delay: 1.5s; }
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-18px) rotate(5deg); }
+  66% { transform: translateY(-8px) rotate(-3deg); }
+}
+
+/* Glowing orbs */
+.orb {
+  position: absolute; border-radius: 50%; pointer-events: none;
+  filter: blur(80px); animation: orbPulse 6s ease-in-out infinite;
+}
+.orb1 { width: 400px; height: 400px; background: rgba(124,58,237,0.2); top: -100px; right: -80px; }
+.orb2 { width: 300px; height: 300px; background: rgba(58,91,217,0.2); bottom: -60px; left: -60px; animation-delay: 3s; }
+@keyframes orbPulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.hero-content { position: relative; z-index: 2; max-width: 620px; }
+
+.hero-pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  padding: 7px 18px; border-radius: 50px;
+  font-size: 0.78rem; color: rgba(255,255,255,0.85); font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: 24px;
+  animation: fadeUp 0.7s ease both;
+}
+.hero-pill::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #4ade80; flex-shrink: 0; box-shadow: 0 0 8px #4ade80; }
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-weight: 800; line-height: 1.1;
+  color: white; margin-bottom: 20px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+h1 .grad-text {
+  background: linear-gradient(135deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
+.hero-desc {
+  font-size: 1.05rem; color: rgba(255,255,255,0.72);
+  line-height: 1.75; margin-bottom: 36px;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.hero-stats {
+  display: flex; gap: 28px; flex-wrap: wrap;
+  margin-bottom: 36px;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+.h-stat { display: flex; flex-direction: column; }
+.h-stat .val { font-family: 'Syne', sans-serif; font-size: 1.7rem; font-weight: 800; color: white; line-height: 1; }
+.h-stat .lbl { font-size: 0.75rem; color: rgba(255,255,255,0.55); font-weight: 500; margin-top: 4px; }
+.stat-div { width: 1px; background: rgba(255,255,255,0.15); align-self: stretch; }
+
+.hero-btns {
+  display: flex; gap: 14px; flex-wrap: wrap;
+  animation: fadeUp 0.7s 0.4s ease both;
+}
+
+/* ─── BUTTONS ─── */
+.btn {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 14px 28px; border-radius: 50px;
+  font-family: 'Poppins', sans-serif; font-size: 0.93rem; font-weight: 600;
+  text-decoration: none; cursor: pointer; border: none;
+  transition: all 0.3s; white-space: nowrap;
+}
+.btn-grad {
+  background: var(--grad); color: white;
+  box-shadow: 0 6px 24px rgba(124,58,237,0.4);
+}
+.btn-grad:hover { box-shadow: 0 12px 36px rgba(124,58,237,0.6); transform: translateY(-2px); }
+.btn-glass {
+  background: rgba(255,255,255,0.12);
+  border: 1.5px solid rgba(255,255,255,0.25);
+  color: white; backdrop-filter: blur(10px);
+}
+.btn-glass:hover { background: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.btn-outline-blue {
+  background: white; color: var(--blue1);
+  border: 2px solid rgba(58,91,217,0.2);
+  box-shadow: var(--shadow-sm);
+}
+.btn-outline-blue:hover { border-color: var(--blue1); box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.btn-wa {
+  background: #25d366; color: white;
+  box-shadow: 0 6px 22px rgba(37,211,102,0.35);
+}
+.btn-wa:hover { box-shadow: 0 12px 36px rgba(37,211,102,0.55); transform: translateY(-2px); }
+
+/* Hero right visual */
+.hero-right {
+  position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+  width: 380px; z-index: 2;
+  animation: fadeUp 0.9s 0.3s ease both;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.hcard {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(20px);
+  border-radius: var(--r); padding: 20px;
+}
+.hcard-top { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.hcard-icon { width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.hcard-icon.blue { background: rgba(58,91,217,0.25); }
+.hcard-icon.purple { background: rgba(124,58,237,0.25); }
+.hcard-icon.green { background: rgba(74,222,128,0.2); }
+.hcard h4 { font-size: 0.9rem; font-weight: 600; color: white; }
+.hcard p { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+.hcard-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 99px; overflow: hidden; }
+.hcard-bar-fill { height: 100%; border-radius: 99px; background: var(--grad); }
+.progress-row { display: flex; justify-content: space-between; font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 5px; }
+.hcard-mini-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.mini-badge {
+  background: rgba(255,255,255,0.1); border-radius: 50px;
+  padding: 5px 12px; font-size: 0.73rem; color: rgba(255,255,255,0.75); font-weight: 500;
+}
+
+/* ─── SECTION COMMON ─── */
+section { padding: 96px 5%; }
+.sec-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--blue1); margin-bottom: 12px;
+}
+.sec-label::before, .sec-label::after {
+  content: ''; display: block; width: 24px; height: 1.5px;
+  background: linear-gradient(90deg, var(--blue1), var(--purple1)); opacity: 0.6;
+}
+h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.9rem, 3.8vw, 2.8rem);
+  font-weight: 800; color: var(--text-dark); line-height: 1.2;
+  margin-bottom: 16px;
+}
+h2 .hl { background: var(--grad); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.sec-desc { font-size: 1rem; color: var(--text-mid); line-height: 1.8; max-width: 560px; }
+
+/* ─── ABOUT ─── */
+#about { background: var(--bg); }
+.about-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 68px; align-items: center; max-width: 1120px; margin: 0 auto; }
+.about-visual { position: relative; }
+.about-img-box {
+  width: 100%; aspect-ratio: 4/5;
+  border-radius: 28px; overflow: hidden;
+  background: linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 100%);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 100px; position: relative;
+  box-shadow: var(--shadow-lg);
+}
+.about-img-box::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top right, rgba(58,91,217,0.18), transparent);
+}
+.about-chip {
+  position: absolute; bottom: -18px; right: -18px;
+  background: white; border-radius: var(--r);
+  padding: 16px 20px; box-shadow: var(--shadow-md);
+  display: flex; align-items: center; gap: 12px;
+}
+.chip-ico { width: 42px; height: 42px; border-radius: 10px; background: var(--grad-soft); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+.chip-val { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text-dark); line-height: 1; }
+.chip-lbl { font-size: 0.72rem; color: var(--text-light); }
+.about-chip2 {
+  position: absolute; top: -18px; left: -18px;
+  background: var(--grad); border-radius: var(--r);
+  padding: 14px 18px; box-shadow: 0 8px 28px rgba(124,58,237,0.35);
+  color: white; font-size: 0.8rem; font-weight: 600;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.about-text {}
+.about-text p { color: var(--text-mid); font-size: 0.96rem; line-height: 1.85; margin-bottom: 14px; }
+.about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.a-tag {
+  display: flex; align-items: center; gap: 7px;
+  background: white; border: 1.5px solid var(--grey-200);
+  padding: 8px 16px; border-radius: 50px;
+  font-size: 0.82rem; font-weight: 600; color: var(--text-mid);
+  box-shadow: var(--shadow-sm);
+}
+.a-tag span { font-size: 1rem; }
+
+/* ─── COURSES ─── */
+#courses { background: var(--white); }
+.courses-head { text-align: center; margin-bottom: 58px; }
+.courses-head .sec-desc { margin: 0 auto; }
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; max-width: 1120px; margin: 0 auto; }
+
+.course-card {
+  background: var(--white);
+  border: 1.5px solid var(--grey-200);
+  border-radius: var(--r-xl);
+  padding: 32px 26px 28px;
+  position: relative; overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
+}
+.course-card::before {
+  content: ''; position: absolute;
+  inset: 0; opacity: 0;
+  background: var(--grad-soft);
+  transition: opacity 0.35s;
+}
+.course-card::after {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--grad); transform: scaleX(0);
+  transform-origin: left; transition: transform 0.35s;
+}
+.course-card:hover { transform: translateY(-8px) scale(1.015); box-shadow: var(--shadow-lg); border-color: transparent; }
+.course-card:hover::before { opacity: 1; }
+.course-card:hover::after { transform: scaleX(1); }
+
+.cc-icon {
+  width: 60px; height: 60px; border-radius: 16px;
+  background: var(--grad-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.7rem; margin-bottom: 20px; position: relative; z-index: 1;
+  transition: background 0.35s;
+}
+.course-card:hover .cc-icon { background: linear-gradient(135deg, rgba(58,91,217,0.15), rgba(124,58,237,0.15)); }
+.course-card h3 { font-family: 'Syne', sans-serif; font-size: 1.08rem; font-weight: 700; color: var(--text-dark); margin-bottom: 10px; position: relative; z-index: 1; }
+.course-card p { font-size: 0.86rem; color: var(--text-light); line-height: 1.72; position: relative; z-index: 1; }
+.cc-bottom {
+  margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--grey-200);
+  display: flex; align-items: center; justify-content: space-between;
+  position: relative; z-index: 1;
+}
+.cc-level { font-size: 0.75rem; font-weight: 600; color: var(--blue1); }
+.cc-arrow { width: 32px; height: 32px; border-radius: 50%; background: var(--grad-soft); display: flex; align-items: center; justify-content: center; font-size: 0.9rem; transition: background 0.3s; }
+.course-card:hover .cc-arrow { background: var(--grad); color: white; }
+
+/* ─── WHY US ─── */
+#why { background: var(--bg); }
+.why-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 68px; align-items: center; max-width: 1120px; margin: 0 auto; }
+.why-left h2 { margin-bottom: 14px; }
+.why-left p { color: var(--text-mid); font-size: 0.97rem; line-height: 1.82; margin-bottom: 30px; }
+.why-points { display: flex; flex-direction: column; gap: 16px; }
+.why-card {
+  display: flex; align-items: flex-start; gap: 16px;
+  background: white; border-radius: var(--r); padding: 20px;
+  border: 1.5px solid var(--grey-200);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+}
+.why-card:hover { box-shadow: var(--shadow-md); transform: translateX(6px); border-color: rgba(58,91,217,0.3); }
+.why-ico {
+  width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+  background: var(--grad-soft);
+  display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+  transition: background 0.3s;
+}
+.why-card:hover .why-ico { background: var(--grad); }
+.why-card h4 { font-size: 0.97rem; font-weight: 700; color: var(--text-dark); margin-bottom: 4px; }
+.why-card p { font-size: 0.83rem; color: var(--text-light); line-height: 1.65; }
+
+/* Why right visual */
+.why-right {
+  background: var(--grad);
+  border-radius: 28px; padding: 40px 36px;
+  color: white; box-shadow: var(--shadow-glow);
+  position: relative; overflow: hidden;
+}
+.why-right::before {
+  content: ''; position: absolute; top: -60px; right: -60px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+}
+.why-right::after {
+  content: ''; position: absolute; bottom: -40px; left: -40px;
+  width: 160px; height: 160px; border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+}
+.wr-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.7; margin-bottom: 6px; }
+.wr-big { font-family: 'Syne', sans-serif; font-size: 4rem; font-weight: 800; line-height: 1; margin-bottom: 6px; }
+.wr-sub { font-size: 0.85rem; opacity: 0.75; margin-bottom: 28px; }
+.wr-divider { height: 1px; background: rgba(255,255,255,0.2); margin: 20px 0; }
+.wr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.wr-item { text-align: center; }
+.wr-item .num { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; }
+.wr-item .txt { font-size: 0.75rem; opacity: 0.7; }
+.wr-cta { margin-top: 28px; text-align: center; position: relative; z-index: 1; }
+.btn-white { background: white; color: var(--blue1); font-weight: 700; box-shadow: 0 6px 24px rgba(0,0,0,0.15); }
+.btn-white:hover { box-shadow: 0 10px 36px rgba(0,0,0,0.22); transform: translateY(-2px); }
+
+/* ─── TESTIMONIALS ─── */
+#reviews { background: var(--white); }
+.reviews-head { text-align: center; margin-bottom: 52px; }
+.reviews-head .sec-desc { margin: 0 auto; }
+.reviews-track-wrap { max-width: 1120px; margin: 0 auto; overflow: hidden; position: relative; }
+.reviews-track { display: flex; gap: 22px; transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); }
+.rev-card {
+  background: var(--bg);
+  border: 1.5px solid var(--grey-200);
+  border-radius: var(--r-xl); padding: 28px;
+  min-width: calc(33.33% - 15px); flex-shrink: 0;
+  transition: box-shadow 0.3s;
+}
+.rev-card:hover { box-shadow: var(--shadow-md); }
+.rev-quote { font-size: 2.5rem; line-height: 1; color: var(--blue1); opacity: 0.3; margin-bottom: -8px; font-family: Georgia, serif; }
+.rev-text { font-size: 0.9rem; color: var(--text-mid); line-height: 1.8; margin: 10px 0 20px; font-style: italic; }
+.rev-footer { display: flex; align-items: center; gap: 12px; }
+.rev-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--grad); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.1rem;
+}
+.rev-name { font-weight: 700; font-size: 0.88rem; color: var(--text-dark); }
+.rev-loc { font-size: 0.74rem; color: var(--text-light); }
+.rev-stars { color: #f59e0b; font-size: 0.85rem; margin-bottom: 2px; letter-spacing: 1px; }
+.slider-dots { display: flex; justify-content: center; gap: 8px; margin-top: 30px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--grey-200); cursor: pointer; transition: all 0.3s; }
+.dot.active { width: 28px; border-radius: 99px; background: var(--grad); }
+.slider-arrows { display: flex; justify-content: center; gap: 12px; margin-top: 18px; }
+.s-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1.5px solid var(--grey-200); background: white; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; color: var(--text-mid); transition: all 0.25s;
+}
+.s-btn:hover { background: var(--grad); color: white; border-color: transparent; box-shadow: var(--shadow-sm); }
+
+/* ─── GALLERY ─── */
+#gallery { background: var(--bg); }
+.gallery-head { text-align: center; margin-bottom: 52px; }
+.gallery-head .sec-desc { margin: 0 auto; }
+.gallery-masonry {
+  columns: 3; column-gap: 18px;
+  max-width: 1120px; margin: 0 auto;
+}
+.g-item {
+  break-inside: avoid; margin-bottom: 18px;
+  border-radius: var(--r); overflow: hidden;
+  position: relative; cursor: zoom-in;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.35s;
+}
+.g-item:hover { transform: scale(1.03); box-shadow: var(--shadow-lg); z-index: 2; }
+.g-item img {
+  display: block; width: 100%; height: auto;
+  transition: transform 0.5s ease;
+}
+.g-item:hover img { transform: scale(1.06); }
+.g-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(58,91,217,0.4), rgba(124,58,237,0.4));
+  opacity: 0; display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.3s; font-size: 2rem; color: white;
+}
+.g-item:hover .g-overlay { opacity: 1; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed; inset: 0; z-index: 9998;
+  background: rgba(10,10,30,0.92); backdrop-filter: blur(10px);
+  display: none; align-items: center; justify-content: center;
+}
+.lightbox.active { display: flex; }
+.lightbox img {
+  max-width: 90vw; max-height: 90vh;
+  object-fit: contain; border-radius: var(--r);
+  box-shadow: 0 30px 100px rgba(0,0,0,0.6);
+  animation: fadeUp 0.3s ease;
+}
+.lb-close {
+  position: absolute; top: 22px; right: 26px;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: rgba(255,255,255,0.12); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; cursor: pointer; transition: background 0.2s;
+}
+.lb-close:hover { background: rgba(255,255,255,0.25); }
+
+/* ─── CONTACT ─── */
+#contact { background: var(--white); }
+.contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; max-width: 1120px; margin: 0 auto; align-items: start; }
+.contact-left h2 { margin-bottom: 14px; }
+.contact-left > p { color: var(--text-mid); font-size: 0.96rem; line-height: 1.8; margin-bottom: 30px; }
+.c-items { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
+.c-item {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--bg); border-radius: var(--r);
+  padding: 16px 18px; border: 1.5px solid var(--grey-200);
+  transition: border-color 0.25s;
+}
+.c-item:hover { border-color: rgba(58,91,217,0.3); }
+.c-ico {
+  width: 44px; height: 44px; border-radius: 11px; flex-shrink: 0;
+  background: var(--grad-soft);
+  display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+}
+.c-lbl { font-size: 0.72rem; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; }
+.c-val { font-size: 0.92rem; color: var(--text-dark); font-weight: 500; line-height: 1.5; margin-top: 2px; }
+.c-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.contact-form-box {
+  background: var(--bg); border: 1.5px solid var(--grey-200);
+  border-radius: var(--r-xl); padding: 36px;
+  box-shadow: var(--shadow-sm);
+}
+.contact-form-box h3 { font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--text-dark); margin-bottom: 24px; }
+.fg { margin-bottom: 18px; }
+.fg label { display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-mid); margin-bottom: 7px; }
+.fg input, .fg textarea, .fg select {
+  width: 100%; padding: 13px 16px;
+  border: 1.5px solid var(--grey-200); border-radius: var(--r-sm);
+  background: white; font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem; color: var(--text-dark); outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.fg input:focus, .fg textarea:focus {
+  border-color: var(--blue1);
+  box-shadow: 0 0 0 3px rgba(58,91,217,0.10);
+}
+.fg textarea { min-height: 110px; resize: vertical; }
+.form-submit {
+  width: 100%; padding: 15px; border-radius: 50px;
+  background: var(--grad); color: white;
+  font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 700;
+  border: none; cursor: pointer;
+  box-shadow: 0 6px 22px rgba(124,58,237,0.38);
+  transition: all 0.3s;
+}
+.form-submit:hover { box-shadow: 0 12px 36px rgba(124,58,237,0.55); transform: translateY(-2px); }
+
+/* ─── MAP ─── */
+#map { padding: 0; background: var(--bg); }
+.map-frame { width: 100%; height: 400px; display: block; border: none; }
+.map-bar {
+  background: white; padding: 20px 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+  border-top: 1px solid var(--grey-200);
+  box-shadow: 0 -4px 18px rgba(0,0,0,0.04);
+}
+.map-info { display: flex; align-items: center; gap: 14px; }
+.map-ico { font-size: 1.8rem; }
+.map-title { font-weight: 700; font-size: 0.97rem; color: var(--text-dark); }
+.map-addr { font-size: 0.82rem; color: var(--text-light); }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--text-dark);
+  color: rgba(255,255,255,0.7);
+  padding: 60px 5% 28px;
+}
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; max-width: 1120px; margin: 0 auto; padding-bottom: 44px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.footer-brand .logo-badge { margin-bottom: 14px; }
+.footer-brand p { font-size: 0.86rem; line-height: 1.8; color: rgba(255,255,255,0.55); max-width: 280px; margin-top: 12px; }
+.footer-col h4 { color: white; font-size: 0.9rem; font-weight: 700; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: #a78bfa; }
+.footer-col p { font-size: 0.85rem; color: rgba(255,255,255,0.55); line-height: 1.75; }
+.footer-bottom {
+  max-width: 1120px; margin: 26px auto 0;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.78rem; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 8px;
+}
+
+/* ─── FLOATING WA ─── */
+.wa-fab {
+  position: fixed; bottom: 26px; right: 26px; z-index: 9997;
+  width: 58px; height: 58px; border-radius: 50%; background: #25d366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 28px rgba(37,211,102,0.5);
+  text-decoration: none; transition: all 0.3s;
+  animation: waPop 2.8s ease infinite;
+}
+.wa-fab:hover { transform: scale(1.1); box-shadow: 0 10px 40px rgba(37,211,102,0.7); }
+.wa-fab svg { width: 30px; height: 30px; fill: white; }
+@keyframes waPop {
+  0%, 100% { box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+  50% { box-shadow: 0 6px 28px rgba(37,211,102,0.5), 0 0 0 14px rgba(37,211,102,0.08); }
+}
+
+/* ─── REVEAL ANIMATIONS ─── */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal.d1 { transition-delay: 0.1s; }
+.reveal.d2 { transition-delay: 0.2s; }
+.reveal.d3 { transition-delay: 0.3s; }
+.reveal.d4 { transition-delay: 0.4s; }
+.reveal.d5 { transition-delay: 0.5s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 960px) {
+  nav { display: none; }
+  nav.open {
+    display: flex; flex-direction: column;
+    position: fixed; inset: 68px 0 0 0;
+    background: white; padding: 32px 5%;
+    gap: 22px; z-index: 998; box-shadow: var(--shadow-md);
+  }
+  nav.open a { color: var(--text-mid) !important; font-size: 1.05rem; padding: 6px 0; }
+  .hamburger { display: flex; }
+  .hero-right { display: none; }
+  .about-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .why-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .contact-wrap { grid-template-columns: 1fr; gap: 40px; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .gallery-masonry { columns: 2; }
+  .rev-card { min-width: calc(50% - 11px); }
+}
+@media (max-width: 600px) {
+  section { padding: 72px 5%; }
+  .gallery-masonry { columns: 1; }
+  .rev-card { min-width: 100%; }
+  .footer-top { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; }
+  .btn { justify-content: center; }
+  .hero-stats { gap: 16px; }
+  .map-bar { flex-direction: column; align-items: flex-start; }
+  .about-chip, .about-chip2 { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header id="hdr">
+  <a href="#hero" class="logo-wrap">
+    <div class="logo-badge">KP</div>
+    <div class="logo-text-wrap">
+      <span class="logo-name logo-name-hero" id="logoName">K.P. Classes</span>
+      <span class="logo-sub">Commerce Coaching · Vadodara</span>
+    </div>
+  </a>
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact" class="nav-cta">Enquire Now</a>
+  </nav>
+  <div class="hamburger" id="hbg" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <!-- Floating shapes -->
+  <div class="f-shape fs1">
+    <svg width="90" height="90" viewBox="0 0 90 90"><defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7c3aed" stop-opacity="0.6"/><stop offset="100%" stop-color="#3a5bd9" stop-opacity="0.3"/></linearGradient></defs><rect x="10" y="10" width="70" height="70" rx="18" fill="url(#g1)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><text x="45" y="55" text-anchor="middle" font-size="32">📚</text></svg>
+  </div>
+  <div class="f-shape fs2">
+    <svg width="68" height="68" viewBox="0 0 68 68"><defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3a5bd9" stop-opacity="0.5"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/></linearGradient></defs><polygon points="34,4 64,54 4,54" fill="url(#g2)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/></svg>
+  </div>
+  <div class="f-shape fs3">
+    <svg width="56" height="56" viewBox="0 0 56 56"><circle cx="28" cy="28" r="26" fill="rgba(124,58,237,0.2)" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/><text x="28" y="36" text-anchor="middle" font-size="24">🎓</text></svg>
+  </div>
+  <div class="f-shape fs4">
+    <svg width="48" height="48" viewBox="0 0 48 48"><rect x="4" y="4" width="40" height="40" rx="8" fill="rgba(58,91,217,0.25)" stroke="rgba(255,255,255,0.12)" stroke-width="1" transform="rotate(20 24 24)"/></svg>
+  </div>
+  <div class="f-shape fs5">
+    <svg width="44" height="44" viewBox="0 0 44 44"><text x="22" y="32" text-anchor="middle" font-size="30">✏️</text></svg>
+  </div>
+  <div class="f-shape fs6">
+    <svg width="60" height="60" viewBox="0 0 60 60"><defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0.2"/></linearGradient></defs><polygon points="30,5 55,22 46,52 14,52 5,22" fill="url(#g3)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/></svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-pill">Now Enrolling for New Batch 2025</div>
+    <h1>Build Your Future<br>with <span class="grad-text">K.P. Classes</span></h1>
+    <p class="hero-desc">Commerce studies with expert guidance — personalised coaching designed to unlock your true potential and secure the results you deserve.</p>
+
+    <div class="hero-stats">
+      <div class="h-stat"><span class="val">500+</span><span class="lbl">Students Taught</span></div>
+      <div class="stat-div"></div>
+      <div class="h-stat"><span class="val">4.5⭐</span><span class="lbl">Student Rating</span></div>
+      <div class="stat-div"></div>
+      <div class="h-stat"><span class="val">10+</span><span class="lbl">Years Experience</span></div>
+    </div>
+
+    <div class="hero-btns">
+      <a href="tel:9825108842" class="btn btn-grad">📞 Call Now</a>
+      <a href="https://wa.me/919825108842?text=Hello!%20I%20am%20interested%20in%20joining%20K.P.%20Classes.%20Please%20share%20details." target="_blank" class="btn btn-glass">
+        <svg viewBox="0 0 24 24" width="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Join on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero right floating cards -->
+  <div class="hero-right">
+    <div class="hcard">
+      <div class="hcard-top">
+        <div class="hcard-icon blue">📊</div>
+        <div><h4>Accountancy</h4><p>Class 11 & 12 Commerce</p></div>
+      </div>
+      <div class="hcard-bar"><div class="hcard-bar-fill" style="width:92%"></div></div>
+      <div class="progress-row"><span>Student Performance</span><span>92%</span></div>
+    </div>
+    <div class="hcard">
+      <div class="hcard-top">
+        <div class="hcard-icon purple">💼</div>
+        <div><h4>Business Studies</h4><p>Expert faculty-led sessions</p></div>
+      </div>
+      <div class="hcard-bar"><div class="hcard-bar-fill" style="width:88%"></div></div>
+      <div class="progress-row"><span>Result Rate</span><span>88%</span></div>
+    </div>
+    <div class="hcard">
+      <div class="hcard-top">
+        <div class="hcard-icon green">🎯</div>
+        <div><h4>Subjects We Cover</h4><p>Commerce + School Coaching</p></div>
+      </div>
+      <div class="hcard-mini-row">
+        <span class="mini-badge">Economics</span>
+        <span class="mini-badge">Maths</span>
+        <span class="mini-badge">Commerce</span>
+        <span class="mini-badge">English</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-visual reveal">
+      <div class="about-img-box">🏫</div>
+      <div class="about-chip2">🌟 Trusted by 500+ students</div>
+      <div class="about-chip">
+        <div class="chip-ico">🏆</div>
+        <div>
+          <div class="chip-val">10+</div>
+          <div class="chip-lbl">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal d2">
+      <div class="sec-label">About K.P. Classes</div>
+      <h2>Where Students <span class="hl">Grow & Excel</span></h2>
+      <p>K.P. Classes is a premier commerce coaching institute in Manjalpur, Vadodara, committed to helping students unlock their academic potential through expert guidance, consistent effort, and a supportive learning environment.</p>
+      <p>Our experienced faculty brings subject-matter depth and genuine care for every student — ensuring that no one is left behind. We focus on concept clarity, regular practice, and exam-ready preparation.</p>
+      <p>With over a decade of coaching excellence and hundreds of successful students, K.P. Classes has become a trusted name for commerce coaching in Vadodara.</p>
+      <div class="about-tags">
+        <div class="a-tag"><span>✅</span> Expert Faculty</div>
+        <div class="a-tag"><span>📖</span> Concept Clarity</div>
+        <div class="a-tag"><span>🎯</span> Exam Focus</div>
+        <div class="a-tag"><span>💬</span> Personal Attention</div>
+        <div class="a-tag"><span>📈</span> Proven Results</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COURSES ─── -->
+<section id="courses">
+  <div class="courses-head reveal">
+    <div class="sec-label">What We Teach</div>
+    <h2>Our <span class="hl">Courses & Subjects</span></h2>
+    <p class="sec-desc">Comprehensive coaching covering all key commerce subjects — taught with clarity, depth, and exam-focused strategy.</p>
+  </div>
+  <div class="courses-grid">
+    <div class="course-card reveal d1">
+      <div class="cc-icon">📊</div>
+      <h3>Accountancy</h3>
+      <p>In-depth coaching for Class 11 & 12 Accountancy — from journal entries to financial statements, with regular practice problems and mock tests.</p>
+      <div class="cc-bottom"><span class="cc-level">Class 11 & 12</span><div class="cc-arrow">→</div></div>
+    </div>
+    <div class="course-card reveal d2">
+      <div class="cc-icon">💼</div>
+      <h3>Business Studies</h3>
+      <p>Clear explanations of BST concepts, case studies, and board-focused notes to help students score high with confidence.</p>
+      <div class="cc-bottom"><span class="cc-level">Class 11 & 12</span><div class="cc-arrow">→</div></div>
+    </div>
+    <div class="course-card reveal d3">
+      <div class="cc-icon">📉</div>
+      <h3>Economics</h3>
+      <p>Micro and macro economics broken down simply — with diagrams, real-world examples, and structured revision plans.</p>
+      <div class="cc-bottom"><span class="cc-level">Class 11 & 12</span><div class="cc-arrow">→</div></div>
+    </div>
+    <div class="course-card reveal d1">
+      <div class="cc-icon">🔢</div>
+      <h3>Mathematics</h3>
+      <p>Commerce maths made approachable — covering calculus, statistics, and linear programming with step-by-step problem solving.</p>
+      <div class="cc-bottom"><span class="cc-level">Class 11 & 12</span><div class="cc-arrow">→</div></div>
+    </div>
+    <div class="course-card reveal d2">
+      <div class="cc-icon">📝</div>
+      <h3>English</h3>
+      <p>Grammar, comprehension, writing skills and board exam preparation — building communication confidence for students.</p>
+      <div class="cc-bottom"><span class="cc-level">School Level</span><div class="cc-arrow">→</div></div>
+    </div>
+    <div class="course-card reveal d3">
+      <div class="cc-icon">🏫</div>
+      <h3>School Coaching</h3>
+      <p>Holistic support for school-level students — homework help, subject clarity, and foundation building for future studies.</p>
+      <div class="cc-bottom"><span class="cc-level">Class 8–10</span><div class="cc-arrow">→</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHY CHOOSE US ─── -->
+<section id="why">
+  <div class="why-wrap">
+    <div class="why-left reveal">
+      <div class="sec-label">Why Choose Us</div>
+      <h2>The K.P. Classes <span class="hl">Difference</span></h2>
+      <p>We don't just teach subjects — we build confidence, discipline, and exam-ready minds. Here's what makes K.P. Classes the right choice.</p>
+      <div class="why-points">
+        <div class="why-card">
+          <div class="why-ico">👩‍🏫</div>
+          <div>
+            <h4>Experienced & Skilled Teachers</h4>
+            <p>Faculty with deep subject expertise and years of classroom experience — committed to your success.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-ico">🎯</div>
+          <div>
+            <h4>Personal Attention to Every Student</h4>
+            <p>Small batch sizes ensure every student gets the individual focus and guidance they need to excel.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-ico">📈</div>
+          <div>
+            <h4>Proven Results, Year After Year</h4>
+            <p>Hundreds of successful students, strong board results, and a legacy of academic excellence.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-ico">💡</div>
+          <div>
+            <h4>Concept-First, Exam-Ready Approach</h4>
+            <p>We emphasise deep understanding over rote memorisation — so students can tackle any question confidently.</p>
+          </div>
+        </div>
+        <div class="why-card">
+          <div class="why-ico">🤝</div>
+          <div>
+            <h4>Supportive, Encouraging Environment</h4>
+            <p>A positive, motivating classroom atmosphere where students feel safe to ask, learn, and grow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-right reveal d2">
+      <div class="wr-label">Overall Rating</div>
+      <div class="wr-big">4.5⭐</div>
+      <div class="wr-sub">From verified student & parent reviews</div>
+      <blockquote style="border-left: 3px solid rgba(255,255,255,0.3); padding-left: 16px; font-size: 0.92rem; opacity: 0.88; font-style: italic; line-height: 1.7;">
+        "Faculties are very supportive &amp; highly skilled. My child improved dramatically within just a few months."
+      </blockquote>
+      <div class="wr-divider"></div>
+      <div class="wr-grid">
+        <div class="wr-item"><div class="num">500+</div><div class="txt">Students Coached</div></div>
+        <div class="wr-item"><div class="num">10+</div><div class="txt">Years Experience</div></div>
+        <div class="wr-item"><div class="num">95%</div><div class="txt">Satisfaction Rate</div></div>
+        <div class="wr-item"><div class="num">6</div><div class="txt">Subjects Covered</div></div>
+      </div>
+      <div class="wr-cta">
+        <a href="https://wa.me/919825108842?text=Hello!%20I%20want%20to%20join%20K.P.%20Classes." target="_blank" class="btn btn-white">🚀 Enrol Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── REVIEWS ─── -->
+<section id="reviews">
+  <div class="reviews-head reveal">
+    <div class="sec-label">Student Reviews</div>
+    <h2>What Our <span class="hl">Students Say</span></h2>
+    <p class="sec-desc">Real words from real students and parents who experienced the K.P. Classes difference.</p>
+  </div>
+  <div class="reviews-track-wrap reveal">
+    <div class="reviews-track" id="revTrack">
+      <div class="rev-card">
+        <div class="rev-quote">"</div>
+        <p class="rev-text">Faculties are very supportive and highly skilled. The way they explain concepts makes everything so much easier to understand and remember during exams.</p>
+        <div class="rev-footer">
+          <div class="rev-avatar">A</div>
+          <div><div class="rev-stars">★★★★★</div><div class="rev-name">Ananya Mehta</div><div class="rev-loc">Class 12 Commerce</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-quote">"</div>
+        <p class="rev-text">My accountancy score jumped from 68% to 91% after joining K.P. Classes. The regular tests and personal guidance make all the difference. Highly recommend!</p>
+        <div class="rev-footer">
+          <div class="rev-avatar">R</div>
+          <div><div class="rev-stars">★★★★★</div><div class="rev-name">Rahul Patel</div><div class="rev-loc">Class 12 Student</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-quote">"</div>
+        <p class="rev-text">As a parent, I am thoroughly impressed. The teachers are knowledgeable and genuinely care about each student's progress. My daughter's confidence has grown tremendously.</p>
+        <div class="rev-footer">
+          <div class="rev-avatar">S</div>
+          <div><div class="rev-stars">★★★★½</div><div class="rev-name">Sunita Shah</div><div class="rev-loc">Parent of Class 11 Student</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-quote">"</div>
+        <p class="rev-text">Best commerce coaching in Manjalpur! The small batch size means I always get help when I'm stuck. Economics used to be my weakest subject — now it's my strongest.</p>
+        <div class="rev-footer">
+          <div class="rev-avatar">D</div>
+          <div><div class="rev-stars">★★★★★</div><div class="rev-name">Dhruv Joshi</div><div class="rev-loc">Class 11 Commerce</div></div>
+        </div>
+      </div>
+      <div class="rev-card">
+        <div class="rev-quote">"</div>
+        <p class="rev-text">The teachers at K.P. Classes don't just teach — they motivate. I felt supported throughout the year and it showed in my board results. Thank you so much!</p>
+        <div class="rev-footer">
+          <div class="rev-avatar">P</div>
+          <div><div class="rev-stars">★★★★★</div><div class="rev-name">Priya Desai</div><div class="rev-loc">Class 12 Commerce</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider-arrows">
+    <button class="s-btn" onclick="slideRev(-1)">←</button>
+    <button class="s-btn" onclick="slideRev(1)">→</button>
+  </div>
+  <div class="slider-dots" id="revDots"></div>
+</section>
+
+<!-- ─── GALLERY ─── -->
+<section id="gallery">
+  <div class="gallery-head reveal">
+    <div class="sec-label">Gallery</div>
+    <h2>Life at <span class="hl">K.P. Classes</span></h2>
+    <p class="sec-desc">Glimpses of our learning environment, classroom moments, and student achievements.</p>
+  </div>
+  <div class="gallery-masonry reveal">
+    <div class="g-item" onclick="openLb('images/img1.png')">
+      <img src="images/img1.png" alt="K.P. Classes Gallery 1" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img2.png')">
+      <img src="images/img2.png" alt="K.P. Classes Gallery 2" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img3.png')">
+      <img src="images/img3.png" alt="K.P. Classes Gallery 3" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img4.png')">
+      <img src="images/img4.png" alt="K.P. Classes Gallery 4" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img5.png')">
+      <img src="images/img5.png" alt="K.P. Classes Gallery 5" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img6.png')">
+      <img src="images/img6.png" alt="K.P. Classes Gallery 6" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img7.png')">
+      <img src="images/img7.png" alt="K.P. Classes Gallery 7" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img8.png')">
+      <img src="images/img8.png" alt="K.P. Classes Gallery 8" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+    <div class="g-item" onclick="openLb('images/img9.png')">
+      <img src="images/img9.png" alt="K.P. Classes Gallery 9" loading="lazy">
+      <div class="g-overlay">🔍</div>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:22px;font-size:0.8rem;color:var(--text-light);">📸 Add your PNG images to the <code>images/</code> folder — they'll display here automatically with their original aspect ratio.</p>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lb" onclick="closeLb()">
+  <div class="lb-close" onclick="closeLb()">✕</div>
+  <img id="lbImg" src="" alt="Gallery">
+</div>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left reveal">
+      <div class="sec-label">Get In Touch</div>
+      <h2>Start Your <span class="hl">Journey Today</span></h2>
+      <p>Have questions or want to enrol? Reach out — we're happy to guide you. Admissions open for the new batch.</p>
+      <div class="c-items">
+        <div class="c-item">
+          <div class="c-ico">📍</div>
+          <div>
+            <div class="c-lbl">Address</div>
+            <div class="c-val">33, 2nd Floor, Silver Rock Complex,<br>Behind Makarpura Police Station,<br>Bhavan's Tin Rasta, Manjalpur, Vadodara</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">📞</div>
+          <div>
+            <div class="c-lbl">Phone</div>
+            <div class="c-val">+91 98251 08842</div>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ico">⏰</div>
+          <div>
+            <div class="c-lbl">Hours</div>
+            <div class="c-val">Monday – Saturday · Open till 7:30 PM</div>
+          </div>
+        </div>
+      </div>
+      <div class="c-btns">
+        <a href="tel:9825108842" class="btn btn-grad">📞 Call Now</a>
+        <a href="https://wa.me/919825108842?text=Hello!%20I%20am%20interested%20in%20K.P.%20Classes." target="_blank" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" width="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="contact-form-box reveal d2">
+      <h3>📋 Enquiry Form</h3>
+      <div class="fg">
+        <label>Student / Parent Name</label>
+        <input type="text" placeholder="e.g. Rahul Patel" id="f-name">
+      </div>
+      <div class="fg">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="e.g. 9825108842" id="f-phone">
+      </div>
+      <div class="fg">
+        <label>Your Message / Query</label>
+        <textarea placeholder="e.g. I want to know about commerce coaching for class 12..." id="f-msg"></textarea>
+      </div>
+      <button class="form-submit" onclick="sendEnquiry()">Send Enquiry via WhatsApp 💬</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MAP ─── -->
+<div id="map">
+  <iframe class="map-frame"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.55!2d73.17219807496458!3d22.27665194476384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5fb20000001%3A0xabc!2sManjalpur%2C+Vadodara%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <div class="map-bar">
+    <div class="map-info">
+      <div class="map-ico">📍</div>
+      <div>
+        <div class="map-title">K.P. Classes – Silver Rock Complex</div>
+        <div class="map-addr">33, 2nd Floor, Behind Makarpura Police Station, Bhavan's Tin Rasta, Manjalpur, Vadodara</div>
+      </div>
+    </div>
+    <a href="https://maps.google.com/?q=Silver+Rock+Complex+Manjalpur+Vadodara" target="_blank" class="btn btn-outline-blue">🗺 Get Directions</a>
+  </div>
+</div>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-badge">KP</div>
+      <p>K.P. Classes – Premier commerce coaching in Manjalpur, Vadodara. Skilled faculty, personal attention, and proven results since over a decade.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About Us</a>
+      <a href="#courses">Courses</a>
+      <a href="#why">Why Choose Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>33, 2nd Floor, Silver Rock Complex,<br>Manjalpur, Vadodara, Gujarat</p>
+      <a href="tel:9825108842" style="margin-top:10px;">📞 +91 98251 08842</a>
+      <a href="https://wa.me/919825108842" target="_blank">💬 WhatsApp Us</a>
+      <p style="margin-top:8px;">⏰ Open till 7:30 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 K.P. Classes, Manjalpur, Vadodara. All rights reserved.</span>
+    <span style="color:rgba(255,255,255,0.25);">Commerce Coaching · Vadodara</span>
+  </div>
+</footer>
+
+<!-- ─── FLOATING WA ─── -->
+<a class="wa-fab" href="https://wa.me/919825108842?text=Hello!%20I%20am%20interested%20in%20K.P.%20Classes." target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ─── JS ─── -->
+<script>
+/* Header scroll */
+const hdr = document.getElementById('hdr');
+const logoName = document.getElementById('logoName');
+window.addEventListener('scroll', () => {
+  const s = window.scrollY > 40;
+  hdr.classList.toggle('scrolled', s);
+  logoName.classList.toggle('logo-name-hero', !s);
+});
+
+/* Mobile nav */
+function toggleNav() {
+  const n = document.getElementById('nav');
+  n.classList.toggle('open');
+}
+document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => document.getElementById('nav').classList.remove('open')));
+
+/* Scroll reveal */
+const revObs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+/* Reviews slider */
+let revPos = 0;
+const revTrack = document.getElementById('revTrack');
+const revCards = revTrack.querySelectorAll('.rev-card');
+const dotsWrap = document.getElementById('revDots');
+
+function getVisible() {
+  const w = revTrack.parentElement.offsetWidth;
+  if (w < 600) return 1;
+  if (w < 960) return 2;
+  return 3;
+}
+function maxRevPos() { return Math.max(0, revCards.length - getVisible()); }
+
+// Build dots
+revCards.forEach((_, i) => {
+  const d = document.createElement('div');
+  d.className = 'dot' + (i === 0 ? ' active' : '');
+  d.onclick = () => gotoSlide(i);
+  dotsWrap.appendChild(d);
+});
+
+function gotoSlide(pos) {
+  revPos = Math.max(0, Math.min(maxRevPos(), pos));
+  const cardW = revCards[0].offsetWidth + 22;
+  revTrack.style.transform = `translateX(-${revPos * cardW}px)`;
+  dotsWrap.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === revPos));
+}
+function slideRev(dir) { gotoSlide(revPos + dir); }
+
+// Auto slide
+setInterval(() => { gotoSlide(revPos >= maxRevPos() ? 0 : revPos + 1); }, 4500);
+
+/* Lightbox */
+function openLb(src) {
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lb').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeLb() {
+  document.getElementById('lb').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+/* WhatsApp form */
+function sendEnquiry() {
+  const name = document.getElementById('f-name').value.trim();
+  const phone = document.getElementById('f-phone').value.trim();
+  const msg = document.getElementById('f-msg').value.trim();
+  if (!name || !phone) { alert('Please fill in your name and phone number.'); return; }
+  const text = `Hello K.P. Classes!\n\nName: ${name}\nPhone: ${phone}\nQuery: ${msg || 'I would like more information about your courses.'}\n\nThank you!`;
+  window.open(`https://wa.me/919825108842?text=${encodeURIComponent(text)}`, '_blank');
+}
+</script>
+</body>
+</html>
